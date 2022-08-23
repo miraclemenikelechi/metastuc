@@ -319,12 +319,15 @@ footer div a i {
 
     .about-section {
         padding: 30px 50px;
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .about-section p {
-        width: 270px;
-        text-align: left;
+        width: 300px;
+        text-align: center;
+        letter-spacing: 2px;
     }
 
     .features-section {
@@ -340,7 +343,7 @@ footer div a i {
     }
 
     .waitlist-section form span i {
-        left: 5%;
+        left: 7%;
     }
 
     .waitlist-section form input:nth-child(2) {
