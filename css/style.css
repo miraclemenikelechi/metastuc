@@ -1,0 +1,364 @@
+:root {
+    --black: rgba(0, 0, 0, 1);
+    --white: rgba(255, 255, 255, 1);
+    --teal: rgb(67, 179, 174);
+    --purple: rgb(153, 85, 187);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'DM Sans',
+        sans-serif;
+}
+
+.container {
+    height: 100%;
+    color: var(--white);
+    background: var(--black);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 40px;
+}
+
+.logo img {
+    width: 250px;
+}
+
+nav label ion-icon {
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+#menu-button {
+    display: none;
+}
+
+#menu-button:checked~.menu {
+    right: 0%;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    background-color: var(--black);
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    right: -100%;
+    top: 0;
+    transition: all ease 0.3s;
+}
+
+.menu label ion-icon {
+    font-size: 3rem;
+    position: absolute;
+    left: 5%;
+    top: 3%;
+    cursor: pointer;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+    position: inherit;
+    top: 20%;
+}
+
+.menu ul li {
+    padding: 50px;
+    text-transform: capitalize;
+    transition: all ease 0.3s;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.menu ul li:hover {
+    color: var(--teal);
+}
+
+.about-section {
+    padding: 50px 200px;
+    color: var(--teal);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-section p {
+    width: 450px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.features-section {
+    display: flex;
+    margin: 50px;
+    justify-content: space-evenly;
+}
+
+.features {
+    margin: 30px;
+    font-size: 1.2rem;
+    border: 1px solid var(--white);
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    box-shadow: -5px 5px 0 rgba(255, 255, 255, 1);
+    cursor: pointer;
+}
+
+.waitlist-section {
+    margin: 80px 50px;
+    text-align: center;
+}
+
+.waitlist-section h3 {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.waitlist-section p {
+    font-size: 0.9rem;
+    word-spacing: 2px;
+    margin-bottom: 3px;
+}
+
+.waitlist-section p span:nth-child(1) {
+    color: var(--purple);
+    font-size: inherit;
+}
+
+.waitlist-section p span:nth-child(2) {
+    color: var(--teal);
+    font-size: inherit;
+}
+
+.waitlist-section p span:nth-child(3) {
+    font-size: 1.2rem;
+}
+
+.waitlist-section form {
+    position: relative;
+}
+
+.waitlist-section form span i {
+    border: none;
+    position: absolute;
+    left: 15%;
+    top: 20%;
+}
+
+.waitlist-section form span i {
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.waitlist-section form input:nth-child(2) {
+    width: 70%;
+    padding: 10px 20px;
+    padding-left: 10%;
+    text-align: center;
+    border: none;
+    background: var(--white);
+    font-size: 0.9rem;
+    text-transform: lowercase;
+    letter-spacing: 4px;
+    outline: none;
+    margin-right: 3px;
+}
+
+.waitlist-section form input:nth-child(3) {
+    padding: 10px 25px;
+    background: var(--teal);
+    font-size: 0.9rem;
+    border: none;
+    cursor: pointer;
+}
+
+.gtk-section {
+    margin: 40px;
+}
+
+.gtk-section h3 {
+    text-transform: capitalize;
+    color: var(--teal);
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.gtk-section h3 span {
+    margin-right: 30px;
+    color: var(--purple);
+}
+
+.gtk-section h3 span i {
+    font-size: 1.5rem;
+}
+
+.gtk-section p {
+    margin-left: 120px;
+    padding: 10px;
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+.gtk-section p span {
+    color: var(--purple);
+    font-size: inherit;
+}
+
+.tags-section {
+    margin: 90px 40px;
+}
+
+.tags-section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.tags-section div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tags-section div p {
+    font-size: 1.5rem;
+    color: var(--teal);
+    font-weight: 500;
+}
+
+#fade {
+    background: rgba(66, 179, 173, 0.5);
+    background: linear-gradient(to bottom, rgba(67, 179, 174, 0.5) 40%, rgba(153, 85, 187, 0.5) 75%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: var(--teal);
+}
+
+footer div {
+    display: flex;
+    justify-content: space-evenly;
+    height: 30px;
+    align-items: center;
+    background-color: var(--white);
+}
+
+footer div a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+footer div a i {
+    font-size: 1.5rem;
+}
+
+@media only screen and (min-width : 200px) and (max-width : 680px) {
+    * {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 0 20px;
+    }
+
+    .logo img {
+        width: 30%;
+    }
+
+    nav label ion-icon {
+        font-size: 2.2rem;
+    }
+
+    .menu {
+        width: 70%;
+    }
+
+    .menu label ion-icon {
+        font-size: 2.5rem;
+    }
+
+    .menu ul {
+        top: 5%;
+    }
+
+    .menu .tags-section {
+        display: none;
+    }
+
+    .about-section {
+        padding: 30px 50px;
+        display: block;
+    }
+
+    .about-section p {
+        width: 270px;
+        text-align: left;
+    }
+
+    .features-section {
+        margin: 30px 50px;
+    }
+
+    .features {
+        height: 120px;
+        width: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .waitlist-section form span i {
+        left: 5%;
+    }
+
+    .waitlist-section form input:nth-child(2) {
+        letter-spacing: 2px;
+        padding-left: 16%;
+    }
+
+    .gtk-section p {
+        margin-left: 60px;
+        text-align: left;
+    }
+
+    .tags-section div p {
+        padding-right: 5px;
+        font-size: 1rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+}
