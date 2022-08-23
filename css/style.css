@@ -63,7 +63,7 @@ nav label ion-icon {
     font-size: 3rem;
     position: absolute;
     left: 5%;
-    top: 3%;
+    top: 3.5%;
     cursor: pointer;
 }
 
@@ -298,7 +298,7 @@ footer div a i {
     }
 
     nav label ion-icon {
-        font-size: 2.2rem;
+        font-size: 2.5rem;
     }
 
     .menu {
@@ -310,7 +310,7 @@ footer div a i {
     }
 
     .menu ul {
-        top: 5%;
+        top: 10%;
     }
 
     .menu .tags-section {
