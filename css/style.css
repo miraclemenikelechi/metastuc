@@ -1,7 +1,67 @@
+@font-face {
+    font-family: 'Nippo-Variable';
+    src: url('../fonts/nippo/Nippo-Variable.woff2') format('woff2'),
+        url('../fonts/nippo/Nippo-Variable.woff') format('woff'),
+        url('../fonts/nippo/Nippo-Variable.ttf') format('truetype');
+    font-weight: 200 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nippo-Extralight';
+    src: url('../fonts/nippo/Nippo-Extralight.woff2') format('woff2'),
+        url('../fonts/nippo/Nippo-Extralight.woff') format('woff'),
+        url('../fonts/nippo/Nippo-Extralight.ttf') format('truetype');
+    font-weight: 200;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nippo-Light';
+    src: url('../fonts/nippo/Nippo-Light.woff2') format('woff2'),
+        url('../fonts/nippo/Nippo-Light.woff') format('woff'),
+        url('../fonts/nippo/Nippo-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nippo-Regular';
+    src: url('../fonts/nippo/Nippo-Regular.woff2') format('woff2'),
+        url('../fonts/nippo/Nippo-Regular.woff') format('woff'),
+        url('../fonts/nippo/Nippo-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nippo-Medium';
+    src: url('../fonts/nippo/Nippo-Medium.woff2') format('woff2'),
+        url('../fonts/nippo/Nippo-Medium.woff') format('woff'),
+        url('../fonts/nippo/Nippo-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nippo-Bold';
+    src: url('../fonts/nippo/Nippo-Bold.woff2') format('woff2'),
+        url('../fonts/nippo/Nippo-Bold.woff') format('woff'),
+        url('../fonts/nippo/Nippo-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
 :root {
     --black: rgb(11, 12, 13);
     --white: rgb(255, 255, 255);
-    --teal: rgb(67, 179, 174);
+    --teal: rgb(128, 255, 159);
     --purple: rgb(153, 85, 187);
 }
 
@@ -101,9 +161,10 @@ nav label ion-icon {
 
 .about-section p {
     width: 450px;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 500;
     text-align: justify;
+    font-family: "Nippo-Medium";
 }
 
 .features-section {
@@ -132,7 +193,8 @@ nav label ion-icon {
     text-transform: capitalize;
     font-size: 1.5rem;
     margin-bottom: 20px;
-    font-weight: 500;
+    font-family: 'Nippo-Regular';
+    font-weight: 400;
 }
 
 .waitlist-section p {
@@ -201,8 +263,9 @@ nav label ion-icon {
     text-transform: capitalize;
     color: var(--teal);
     letter-spacing: 3px;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 500;
+    font-family: "Nippo-Medium";
 }
 
 .gtk-section h3 span {
@@ -215,9 +278,10 @@ nav label ion-icon {
 }
 
 .gtk-section p {
-    margin-left: 120px;
+    margin-left: 50%;
     padding: 10px;
     text-align: justify;
+    color: rgba(255, 255, 255, 0.5);
     font-size: 1.1rem;
 }
 
@@ -227,7 +291,7 @@ nav label ion-icon {
 }
 
 .tags-section {
-    margin: 90px 40px;
+    margin: 70px 40px;
 }
 
 .tags-section {
@@ -257,31 +321,32 @@ nav label ion-icon {
 }
 
 footer {
-    width: 100%;
     text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 40px;
 }
 
 footer p {
     font-size: 1.3rem;
-    margin-bottom: 10px;
     color: var(--teal);
 }
 
-footer div {
-    display: flex;
-    justify-content: space-evenly;
-    height: 30px;
-    align-items: center;
-    background-color: var(--white);
-}
-
-footer div a {
+.social-icons div a {
     text-decoration: none;
-    color: var(--black);
+    color: rgba(255, 255, 255, 0.5);
+    padding-right: 5px;
+    margin-bottom: 5px;
 }
 
-footer div a i {
+footer .social-icons {
     font-size: 1.5rem;
+}
+
+footer .social-icons p {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 0.7rem;
 }
 
 @media only screen and (min-width : 200px) and (max-width : 680px) {
@@ -328,7 +393,6 @@ footer div a i {
         width: 300px;
         text-align: center;
         letter-spacing: 2px;
-        font-size: 1.1rem;
     }
 
     .features-section {
@@ -354,10 +418,14 @@ footer div a i {
         padding-left: 16%;
     }
 
+    .gtk-section h3 {
+        font-size: 1.2rem;
+    }
+
     .gtk-section p {
-        margin-left: 60px;
         text-align: left;
         font-size: 0.9rem;
+        font-weight: 400;
     }
 
     .tags-section div p {
@@ -365,8 +433,8 @@ footer div a i {
         font-size: 1rem;
     }
 
-    footer p {
-        font-size: 1rem;
+    footer {
+        justify-content: center;
     }
 
     footer div a i {
