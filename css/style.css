@@ -286,7 +286,7 @@ footer div a i {
 
 @media only screen and (min-width : 200px) and (max-width : 680px) {
     * {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     header {
@@ -328,18 +328,21 @@ footer div a i {
         width: 300px;
         text-align: center;
         letter-spacing: 2px;
+        font-size: 1.1rem;
     }
 
     .features-section {
-        margin: 30px 50px;
+        margin: 40px 0px;
     }
 
     .features {
-        height: 120px;
-        width: 120px;
+        width: 100%;
+        padding: 10px;
+        margin: 20px 0;
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 0.7rem;
     }
 
     .waitlist-section form span i {
@@ -354,6 +357,7 @@ footer div a i {
     .gtk-section p {
         margin-left: 60px;
         text-align: left;
+        font-size: 0.9rem;
     }
 
     .tags-section div p {
@@ -363,5 +367,9 @@ footer div a i {
 
     footer p {
         font-size: 1rem;
+    }
+
+    footer div a i {
+        font-size: 1.1rem;
     }
 }
