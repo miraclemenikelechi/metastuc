@@ -139,8 +139,8 @@ nav label ion-icon {
     flex-direction: column;
     position: inherit;
     top: 15%;
-    margin: auto;
-    width: 60%;
+    margin: 0 20px;
+    max-width: 60%;
 }
 
 .menu ul li label {
@@ -163,8 +163,9 @@ nav label ion-icon {
 .menu ul li input:checked+.box {
     height: auto;
     margin: 16px 0;
-    box-shadow: 0 0 6px rgba(128, 255, 159, .16),
-        0 6px 12px rgba(153, 85, 187, .12);
+    background: rgba(0, 0, 0, 1);
+    box-shadow: 0 0 5px rgba(128, 255, 159, .07),
+        0 6px 10px rgba(153, 85, 187, .07);
 }
 
 .menu ul li input:checked+.box .box-title {
@@ -176,12 +177,11 @@ nav label ion-icon {
     display: inline-block;
 }
 
-
 .box {
     position: relative;
     background: var(--black);
     height: 150px;
-    transition: all ease 0.2s;
+    transition: all ease .15s;
     text-align: center;
 }
 
