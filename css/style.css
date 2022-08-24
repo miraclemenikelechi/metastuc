@@ -157,7 +157,8 @@ nav label ion-icon {
 .menu ul li input:checked+.box {
     height: auto;
     margin: 16px 0;
-    box-shadow: 0 0 6px rgba(0, 0, 0, .16), 0 6px 12px rgba(0, 0, 0, .32);
+    box-shadow: 0 0 6px rgba(128, 255, 159, .16),
+        0 6px 12px rgba(153, 85, 187, .12);
 }
 
 .menu ul li input:checked+.box .box-title {
@@ -172,7 +173,7 @@ nav label ion-icon {
 
 .box {
     position: relative;
-    background: inherit;
+    background: var(--black);
     height: 150px;
     transition: all ease 0.2s;
     text-align: center;
