@@ -240,7 +240,7 @@ nav label ion-icon {
 
 .features-section {
     display: flex;
-    margin: 50px;
+    margin: 50px 40px;
     justify-content: space-evenly;
 }
 
@@ -256,7 +256,7 @@ nav label ion-icon {
 }
 
 .waitlist-section {
-    margin: 80px 50px;
+    margin: 80px 40px;
     text-align: center;
 }
 
