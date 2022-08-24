@@ -131,14 +131,13 @@ nav label ion-icon {
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 25px;
     position: inherit;
-    top: 20%;
+    top: 15%;
+    margin: auto;
+    width: 60%;
 }
 
-.menu ul li {
-    padding: 50px;
+.menu ul li label {
     text-transform: capitalize;
     transition: all ease 0.3s;
     text-align: center;
@@ -146,8 +145,68 @@ nav label ion-icon {
     font-size: 1.5rem;
 }
 
-.menu ul li:hover {
+.menu ul li .box-title:hover {
     color: var(--teal);
+    border-bottom: 1px solid var(--teal);
+}
+
+.menu ul input {
+    display: none;
+}
+
+.menu ul li input:checked+.box {
+    height: auto;
+    margin: 16px 0;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .16), 0 6px 12px rgba(0, 0, 0, .32);
+}
+
+.menu ul li input:checked+.box .box-title {
+    border-bottom: 1px solid rgba(0, 0, 0, .18);
+}
+
+.menu ul li input:checked+.box .box-content,
+.menu ul li input:checked+.box .box-close {
+    display: inline-block;
+}
+
+
+.box {
+    position: relative;
+    background: inherit;
+    height: 150px;
+    transition: all ease 0.2s;
+    text-align: center;
+}
+
+.box-title {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.box-content {
+    width: 100%;
+    padding: 30px 20px;
+    display: none;
+    font-size: 1rem;
+}
+
+.box-close {
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: none;
 }
 
 .about-section {
@@ -317,7 +376,6 @@ nav label ion-icon {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
 }
 
 footer {
