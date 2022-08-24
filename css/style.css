@@ -74,6 +74,12 @@
         sans-serif;
 }
 
+a {
+    text-decoration: none;
+    font-size: inherit;
+    color: inherit;
+}
+
 .container {
     height: 100%;
     color: var(--white);
@@ -177,6 +183,11 @@ nav label ion-icon {
     height: 150px;
     transition: all ease 0.2s;
     text-align: center;
+}
+
+.box span,
+.box a {
+    color: var(--purple);
 }
 
 .box-title {
@@ -329,12 +340,12 @@ nav label ion-icon {
 }
 
 .gtk-section h3 span {
-    margin-right: 30px;
+    margin-right: 10px;
     color: var(--purple);
 }
 
 .gtk-section h3 span i {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .gtk-section p {
@@ -393,7 +404,6 @@ footer p {
 }
 
 .social-icons div a {
-    text-decoration: none;
     color: rgba(255, 255, 255, 0.5);
     padding-right: 5px;
     margin-bottom: 5px;
