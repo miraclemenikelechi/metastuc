@@ -59,10 +59,12 @@
 }
 
 :root {
-    --black: rgb(11, 12, 13);
+    --black: rgb(6, 6, 6);
     --white: rgb(255, 255, 255);
-    --teal: rgb(128, 255, 159);
-    --purple: rgb(153, 85, 187);
+    --light-blue: rgb(204, 251, 255);
+    --pink: rgb(238, 155, 200);
+    --gradient-bottom: rgb(238, 155, 200);
+    --gradient-top: rgb(255, 255, 255);
 }
 
 * {
@@ -152,8 +154,8 @@ nav label ion-icon {
 }
 
 .menu ul li .box-title:hover {
-    color: var(--teal);
-    border-bottom: 1px solid var(--teal);
+    color: var(--light-blue);
+    border-bottom: 1px solid var(--light-blue);
 }
 
 .menu ul input {
@@ -187,7 +189,7 @@ nav label ion-icon {
 
 .box span,
 .box a {
-    color: var(--purple);
+    color: var(--pink);
 }
 
 .box-title {
@@ -223,7 +225,7 @@ nav label ion-icon {
 
 .about-section {
     padding: 50px 200px;
-    color: var(--teal);
+    color: var(--light-blue);
     text-align: center;
     display: flex;
     align-items: center;
@@ -275,12 +277,12 @@ nav label ion-icon {
 }
 
 .waitlist-section p span:nth-child(1) {
-    color: var(--purple);
+    color: var(--pink);
     font-size: inherit;
 }
 
 .waitlist-section p span:nth-child(2) {
-    color: var(--teal);
+    color: var(--light-blue);
     font-size: inherit;
 }
 
@@ -292,15 +294,15 @@ nav label ion-icon {
     position: relative;
 }
 
-.waitlist-section form span i {
+.waitlist-section form span svg {
     border: none;
     position: absolute;
     left: 15%;
     top: 20%;
 }
 
-.waitlist-section form span i {
-    font-size: 1.5rem;
+.waitlist-section form span svg {
+    width: 1.5rem;
     color: rgba(0, 0, 0, 0.5);
 }
 
@@ -320,7 +322,7 @@ nav label ion-icon {
 
 .waitlist-section form input:nth-child(3) {
     padding: 10px 25px;
-    background: var(--teal);
+    background: var(--light-blue);
     font-size: 0.9rem;
     border: none;
     cursor: pointer;
@@ -332,7 +334,7 @@ nav label ion-icon {
 
 .gtk-section h3 {
     text-transform: capitalize;
-    color: var(--teal);
+    color: var(--light-blue);
     letter-spacing: 3px;
     font-size: 1.7rem;
     font-weight: 500;
@@ -341,7 +343,7 @@ nav label ion-icon {
 
 .gtk-section h3 span {
     margin-right: 10px;
-    color: var(--purple);
+    color: var(--pink);
 }
 
 .gtk-section h3 span i {
@@ -349,7 +351,7 @@ nav label ion-icon {
 }
 
 .gtk-section p {
-    margin-left: 50%;
+    margin-left: 10%;
     padding: 10px;
     text-align: justify;
     color: rgba(255, 255, 255, 0.5);
@@ -357,7 +359,7 @@ nav label ion-icon {
 }
 
 .gtk-section p span {
-    color: var(--purple);
+    color: var(--pink);
     font-size: inherit;
 }
 
@@ -378,13 +380,13 @@ nav label ion-icon {
 
 .tags-section div p {
     font-size: 1.5rem;
-    color: var(--teal);
+    color: var(--light-blue);
     font-weight: 500;
 }
 
 #fade {
     background: rgba(66, 179, 173, 0.5);
-    background: linear-gradient(to bottom, rgba(67, 179, 174, 0.5) 40%, rgba(153, 85, 187, 0.5) 75%);
+    background: linear-gradient(to right, var(--gradient-top) 40%, var(--gradient-bottom) 75%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -400,7 +402,7 @@ footer {
 
 footer p {
     font-size: 1.3rem;
-    color: var(--teal);
+    color: var(--light-blue);
 }
 
 .social-icons div a {
