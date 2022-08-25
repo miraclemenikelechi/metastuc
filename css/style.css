@@ -182,7 +182,7 @@ nav label ion-icon {
 .box {
     position: relative;
     background: var(--black);
-    height: 150px;
+    height: 100px;
     transition: all ease .15s;
     text-align: center;
 }
